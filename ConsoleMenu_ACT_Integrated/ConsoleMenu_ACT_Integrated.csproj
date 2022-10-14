@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>ACT.Windows.Tools.ConsoleMenu</RootNamespace>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <BaseOutputPath>C:\ACT\Releases\ConsoleMenu_ACT_Integrated</BaseOutputPath>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>ConsoleMenu - ACT Integrated</Title>
+    <Version>1.0.2.7</Version>
+    <PackageId>ACT_IVolt_ConsoleMenu_ACT_Integrated</PackageId>
+    <Authors>IVolt,LLC, Mark Alicz  - Original Author lechu445</Authors>
+    <Company>IVolt, LLC</Company>
+    <Product>ACT Windows Tools</Product>
+    <Description>Windows Integrated and Automated Menu System.  DOS Like menu system based on original code by https://github.com/lechu445/ConsoleMenu
+
+This version includes integration with ACT Security,  ACT Extensions, and ACT Applications Core</Description>
+    <Copyright>2022 IVolt LLC</Copyright>
+    <PackageProjectUrl>https://github.com/InspiredVoltage-IVolt/ConsoleMenuACTIntegrated</PackageProjectUrl>
+    <PackageIcon>ACT_Store_Logo_100x100.png</PackageIcon>
+    <RepositoryUrl>https://github.com/InspiredVoltage-IVolt/ConsoleMenuACTIntegrated</RepositoryUrl>
+    <PackageTags>ACT; Console Menu; DOS Like Console; Menu System</PackageTags>
+    <PackageReleaseNotes>First Forked Version</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="V:\Shared drives\Product Information\_Company_Product_Development\ACT\Images\ACT_Store_Logo_100x100.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

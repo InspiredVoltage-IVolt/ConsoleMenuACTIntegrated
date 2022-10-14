@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("ConsoleMenuTests")]
 
-namespace ConsoleTools;
+namespace ACT.Windows.Tools.ConsoleMenu;
 
 /// <summary>
 /// A simple, highly customizable, DOS-like console menu.
@@ -13,9 +13,9 @@ namespace ConsoleTools;
 public class ConsoleMenu : IEnumerable
 {
   internal IConsole Console = new SystemConsole();
-  public MenuConfig config = new MenuConfig();
-  private readonly ItemsCollection menuItems;
-  private readonly CloseTrigger closeTrigger;
+  public MenuConfig ConsoleMenuConfig = new MenuConfig();
+  public ItemsCollection menuItems;
+  private CloseTrigger closeTrigger;
   private ConsoleMenu? parent = null;
 
   /// <summary>
@@ -25,6 +25,12 @@ public class ConsoleMenu : IEnumerable
   {
     this.menuItems = new ItemsCollection();
     this.closeTrigger = new CloseTrigger();
+  }
+
+  public ItemsCollection CurrentMenuItems
+  {
+    get { return menuItems;}
+    set { menuItems = value; }
   }
 
   /// <summary>
@@ -71,7 +77,7 @@ public class ConsoleMenu : IEnumerable
       List<string> titles = new List<string>();
       while (current != null)
       {
-        titles.Add(current.config.Title ?? "");
+        titles.Add(current.ConsoleMenuConfig.Title ?? "");
         current = current.parent;
       }
 
@@ -175,7 +181,7 @@ public class ConsoleMenu : IEnumerable
       throw new ArgumentNullException(nameof(configure));
     }
 
-    configure.Invoke(this.config);
+    configure.Invoke(this.ConsoleMenuConfig);
     return this;
   }
 
@@ -188,7 +194,7 @@ public class ConsoleMenu : IEnumerable
         this.menuItems,
         this.Console,
         new List<string>(this.Titles),
-        this.config,
+        this.ConsoleMenuConfig,
         this.closeTrigger).Show();
   }
 

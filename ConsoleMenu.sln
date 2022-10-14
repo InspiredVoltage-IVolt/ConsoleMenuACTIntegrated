@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMenuSampleApp", "Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMenuTests", "ConsoleMenuTests\ConsoleMenuTests.csproj", "{E8D9B8AB-FA77-4456-B1ED-B036231DBA22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMenu_ACT_Integrated", "ConsoleMenu_ACT_Integrated\ConsoleMenu_ACT_Integrated.csproj", "{A6154F7A-66A1-439E-8232-C58FB58C292A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{E8D9B8AB-FA77-4456-B1ED-B036231DBA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8D9B8AB-FA77-4456-B1ED-B036231DBA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8D9B8AB-FA77-4456-B1ED-B036231DBA22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6154F7A-66A1-439E-8232-C58FB58C292A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6154F7A-66A1-439E-8232-C58FB58C292A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6154F7A-66A1-439E-8232-C58FB58C292A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6154F7A-66A1-439E-8232-C58FB58C292A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
